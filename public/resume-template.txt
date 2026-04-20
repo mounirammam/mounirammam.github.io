@@ -1,0 +1,11 @@
+Mounir Ammam - Resume Placeholder
+
+Replace this file with your actual PDF resume later.
+
+Suggested sections:
+- Summary
+- Experience
+- Projects
+- Skills
+- Education
+- Contact information

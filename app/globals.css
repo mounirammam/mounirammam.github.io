@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/* ─── Design Tokens ─────────────────────────────────────────────────────── */
+
+:root {
+  --background: #f5f7fa;
+  --background-strong: #edf0f6;
+  --foreground: #080d18;
+  --foreground-muted: #3c4a60;
+  --foreground-soft: #6a788e;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: rgba(255, 255, 255, 0.98);
+  --border: rgba(8, 13, 24, 0.07);
+  --border-strong: rgba(8, 13, 24, 0.13);
+  --accent: #1e3c64;
+  --accent-strong: #122840;
+  --accent-foreground: #f0f6ff;
+  --footer-background: #111c2e;
+  --footer-foreground: #eef2fb;
+  --footer-muted: rgba(238, 242, 251, 0.60);
+  --footer-border: rgba(238, 242, 251, 0.10);
+}
+
+.dark {
+  --background: #080c14;
+  --background-strong: #0b1020;
+  --foreground: #eef2fb;
+  --foreground-muted: #a0aec0;
+  --foreground-soft: #5e6e84;
+  --surface: rgba(20, 30, 50, 0.88);
+  --surface-strong: rgba(24, 35, 58, 0.96);
+  --border: rgba(180, 200, 240, 0.09);
+  --border-strong: rgba(180, 200, 240, 0.17);
+  --accent: #5b8ed6;
+  --accent-strong: #7aaae8;
+  --accent-foreground: #040810;
+  --footer-background: #060a12;
+  --footer-foreground: #eef2fb;
+  --footer-muted: rgba(160, 174, 192, 0.65);
+  --footer-border: rgba(180, 200, 240, 0.08);
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    border-color 300ms ease;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--foreground);
+  background:
+    radial-gradient(ellipse at 18% 0%, rgba(30, 60, 100, 0.08) 0%, transparent 48%),
+    radial-gradient(ellipse at 82% 8%, rgba(91, 142, 214, 0.05) 0%, transparent 36%),
+    linear-gradient(180deg, var(--background) 0%, var(--background-strong) 100%);
+  font-family:
+    "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+.dark body {
+  background:
+    radial-gradient(ellipse at 18% 0%, rgba(30, 60, 120, 0.22) 0%, transparent 50%),
+    radial-gradient(ellipse at 82% 8%, rgba(91, 142, 214, 0.10) 0%, transparent 38%),
+    linear-gradient(180deg, var(--background) 0%, var(--background-strong) 100%);
+}
+
+/* ─── Subtle grid texture ────────────────────────────────────────────────── */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(8, 13, 24, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 13, 24, 0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, white 0%, transparent 70%);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.dark body::before {
+  background-image:
+    linear-gradient(rgba(180, 200, 240, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180, 200, 240, 0.045) 1px, transparent 1px);
+  opacity: 0.5;
+}
+
+/* ─── Global resets ──────────────────────────────────────────────────────── */
+
+* {
+  border-color: var(--border);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+/* ─── Spacing ────────────────────────────────────────────────────────────── */
+
+.section-spacing {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* ─── Hero photo ─────────────────────────────────────────────────────────── */
+
+.hero-photo {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(17, 18, 20, 0.06)),
+    url("/mounir.jpeg") center top / cover no-repeat,
+    linear-gradient(180deg, rgba(30, 60, 100, 0.06), rgba(8, 13, 24, 0.08));
+}
+
+/* ─── Project visual ─────────────────────────────────────────────────────── */
+
+.project-visual {
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.18), transparent 35%),
+    linear-gradient(135deg, #4a6282, #1e3c64 40%, #080d18 100%);
+}
+
+/* ─── Transitions ────────────────────────────────────────────────────────── */
+
+input,
+textarea,
+button,
+a,
+div {
+  transition:
+    background-color 300ms ease,
+    color 300ms ease,
+    border-color 300ms ease,
+    transform 300ms ease,
+    box-shadow 300ms ease,
+    opacity 300ms ease;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+}
