@@ -40,7 +40,7 @@ export default function AboutSection() {
             <Surface className="p-8 sm:p-10">
               <div className="space-y-6 text-base leading-8 text-[var(--foreground-muted)] sm:text-lg">
                 <p>
-                  I'm an aspiring AI engineer currently completing an Honours B.Sc. in Computer Science at Universite de Montreal. I focus on building intelligent, data-driven systems at the intersection of machine learning and software engineering.
+                  I'm an aspiring ML engineer currently completing an Honours B.Sc. in Computer Science at Universite de Montreal. I focus on building intelligent, data-driven systems at the intersection of machine learning and software engineering.
                 </p>
                 <p>
                   I enjoy working with machine learning models, experimenting, evaluating, and understanding how they behave and applying them to real-world problems. I have worked on LLM-based systems, including AI-assisted code review tools, exploring how large language models can analyze and improve software development workflows.

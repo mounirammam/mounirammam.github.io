@@ -19,7 +19,7 @@ export default function HeroSection() {
             className="space-y-8"
           >
             <p className="text-xs font-semibold uppercase tracking-[0.38em] text-[var(--foreground-soft)]">
-              AI Engineer in the Making
+              ML Engineer in the Making
             </p>
 
             <h1 className="text-5xl font-bold tracking-[-0.04em] text-[var(--foreground)] sm:text-6xl lg:text-[4.5rem] lg:leading-[1.05]">
@@ -32,7 +32,7 @@ export default function HeroSection() {
               Honours B.Sc. student in Computer Science at Université de
               Montréal. I work on machine learning, model experimentation, and
               applying AI to real-world software problems. I enjoy turning ideas
-              into practical systems — and sharing what I learn along the way.
+              into practical systems, and sharing what I learn along the way.
             </p>
 
             <div className="flex flex-wrap gap-4">

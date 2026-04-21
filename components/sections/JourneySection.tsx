@@ -25,7 +25,7 @@ const education = [
     degree: "M.Sc. in Machine Learning",
     institution: "McGill University & Mila",
     location: "Montreal, QC",
-    period: "Starting Sept 2026 (Expected: Dec 2027)",
+    period: "Starting Sept 2026",
   },
   {
     degree: "Bachelor of Science in Computer Science (Honours)",
@@ -84,6 +84,17 @@ const experience = [
     notes: [
       "Led weekly lab sessions supporting 50+ students in software engineering concepts, and held office hours to answer students' questions and guide them in semester projects.",
       "Graded assignments and projects, and provided clear feedback.",
+    ],
+  },
+  {
+    role: "Math & Programming Tutor",
+    organization: "Self-employed",
+    location: "Montreal, QC",
+    period: "2023 - Present",
+    supervisors: null,
+    notes: [
+      "Tutor high school and university students in mathematics and programming, tailoring explanations to each learner's level and goals.",
+      "Guide students through problem solving, debugging, and core concepts to build lasting understanding and confidence.",
     ],
   },
 ];
